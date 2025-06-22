@@ -1,0 +1,1501 @@
+{
+	"info": {
+		"_postman_id": "a51bb80a-e0cd-4f5e-8c05-193349d2d1f4",
+		"name": "MasterMind",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39546327",
+		"_collection_link": "https://mastermind-game.postman.co/workspace/0f05c8f5-4f8b-470e-818c-6119b623a609/collection/39546327-a51bb80a-e0cd-4f5e-8c05-193349d2d1f4?action=share&source=collection_link&creator=39546327"
+	},
+	"item": [
+		{
+			"name": "Games",
+			"item": [
+				{
+					"name": "Game Status",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "2nd game",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/games/6857c619fc3e138be57888a7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"games",
+										"6857c619fc3e138be57888a7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "261"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"105-f/vhDyZx2qstUu7ZtiV8YiVJ0bY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 11:05:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"in-progress\",\n    \"attempts\": [\n        {\n            \"guess\": [\n                3,\n                9,\n                6,\n                0\n            ],\n            \"bulls\": 0,\n            \"pgias\": 2,\n            \"createdAt\": \"2025-06-22T10:53:13.768Z\",\n            \"_id\": \"6857e099669ca9c7d8192dc2\"\n        },\n        {\n            \"guess\": [\n                1,\n                9,\n                4,\n                6\n            ],\n            \"bulls\": 1,\n            \"pgias\": 3,\n            \"createdAt\": \"2025-06-22T10:55:18.361Z\",\n            \"_id\": \"6857e116669ca9c7d8192dc6\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "1st game",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/games/6857d0ee48a379e757d81210",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"games",
+										"6857d0ee48a379e757d81210"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "255"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ff-NKSxtIB1kdVo3Gjz2ID56tnUfCY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 11:06:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"ended\",\n    \"attempts\": [\n        {\n            \"guess\": [\n                3,\n                8,\n                6,\n                1\n            ],\n            \"bulls\": 3,\n            \"pgias\": 0,\n            \"createdAt\": \"2025-06-22T09:58:37.139Z\",\n            \"_id\": \"6857d3cdc7dafb8abae828a9\"\n        },\n        {\n            \"guess\": [\n                3,\n                8,\n                6,\n                1\n            ],\n            \"bulls\": 3,\n            \"pgias\": 0,\n            \"createdAt\": \"2025-06-22T10:21:32.201Z\",\n            \"_id\": \"6857d92c7a1e57dcbfc2d20a\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Game Status",
+							"originalRequest": {
+								"method": "GET",
+								"header": []
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Game Status",
+							"originalRequest": {
+								"method": "GET",
+								"header": []
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Game Status",
+							"originalRequest": {
+								"method": "GET",
+								"header": []
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "guess",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"guess\": [3,8,6,1] \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/games/6857d0ee48a379e757d81210/guess",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"games",
+								"6857d0ee48a379e757d81210",
+								"guess"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "guess",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"guess\": [3,8,6,1] \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/games/6857d0ee48a379e757d81210/guess",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"games",
+										"6857d0ee48a379e757d81210",
+										"guess"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "84"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"54-PqFkPi/53Rbs90RlShBkbm8hSWI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 10:21:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"correctPosition\": 3,\n    \"correctNumber\": 0,\n    \"status\": \"in-progress\",\n    \"remainingAttempts\": 8\n}"
+						},
+						{
+							"name": "win",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"guess\": [\r\n        1,\r\n        6,\r\n        9,\r\n        4\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/games/6857c619fc3e138be57888a7/guess",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"games",
+										"6857c619fc3e138be57888a7",
+										"guess"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "27"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b-DzzCEk40x5SudF82XpuDRcoHUMg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 11:02:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"body": "\"hooray, you won!!:) :) :)\""
+						},
+						{
+							"name": "validation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"guess\": [1,8,6,1] \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/games/ 6857f7af0cdbdee1bc90e07e/guess",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"games",
+										" 6857f7af0cdbdee1bc90e07e",
+										"guess"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-T/KLkFBnN/FQcAK7Uvkiy0X+jfo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 14:52:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"There must be no duplicates in the guess.\"\n}"
+						},
+						{
+							"name": "game inactive",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"guess\": [3,8,6,1] \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/games/685814fff23ad19e98c7b821/guess",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"games",
+										"685814fff23ad19e98c7b821",
+										"guess"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "25"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"19-iECwX8gqRccKUnwWFKrU16KUS0w\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 14:51:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Game inactive\"\n}"
+						}
+					]
+				},
+				{
+					"name": "start the game",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Player Name\",\r\n    \"password\": \"PlayerPassword\",\r\n    \"mail\": \"player@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/games/start",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"games",
+								"start"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "1st player",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Player Name\",\r\n    \"password\": \"PlayerPassword\",\r\n    \"mail\": \"player@example.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/games/start",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"games",
+										"start"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "173"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ad-0x6y5/r1l6EypUey4a7Vq6uoQIA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 10:49:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "\"Welcome to Mastermind! Try to guess the secret code (4 unique numbers from 1 to 9).your game id is: 6857c619fc3e138be57888a7 please save this for further use in this game \""
+						},
+						{
+							"name": "start the game",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Esther Cherrick\",\r\n    \"password\": \"023456789\",\r\n    \"mail\": \"estherc8842@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/games/start",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"games",
+										"start"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "173"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ad-y4rGOojkcc9iQK7x5OYnbi7v8no\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 14:56:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "\"Welcome to Mastermind! Try to guess the secret code (4 unique numbers from 1 to 9).your game id is: 685819b9dc7a486b0de07e69 please save this for further use in this game \""
+						},
+						{
+							"name": "2nd player",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Esther Cherrick\",\r\n    \"password\": \"023456789\",\r\n    \"mail\": \"estherc8842@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/games/start",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"games",
+										"start"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "173"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ad-pTUCey9LQ+O0vZLML+F+qduIPEg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 14:58:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "\"Welcome to Mastermind! Try to guess the secret code (4 unique numbers from 1 to 9).your game id is: 685819ffdc7a486b0de07e75 please save this for further use in this game \""
+						}
+					]
+				},
+				{
+					"name": "end the game",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "ending game",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/games/6857d0ee48a379e757d81210/end",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"games",
+										"6857d0ee48a379e757d81210",
+										"end"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "16"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10-9CRVUbZ+UyJMQ7AgE3Nq8e4Jl4Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 10:27:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "\"the game ended\""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Players",
+			"item": [
+				{
+					"name": "add player",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Player Name\",\r\n    \"password\": \"PlayerPassword\",\r\n    \"mail\": \"player@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/players/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"players",
+								"add"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "player added successfully",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Player Name\",\r\n    \"password\": \"PlayerPassword\",\r\n    \"mail\": \"player@example.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/players/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"players",
+										"add"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "129"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"81-D4PuhO5UeK3NtpsbF0jt5oD9sfM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 09:00:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Player Name, welcome to the team masterMind players, your player_id is: 6857c619fc3e138be57888a7. Save this for use in this game."
+						},
+						{
+							"name": "try middleware",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Player Name\",\r\n    \"password\": \"PlayerPassword\",\r\n    \"mail\": \"player@example.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/players/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"players",
+										"add"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "50"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"32-yC6qMB8Q7XMBVFWknxnI4DjF38c\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 14:28:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User already exists with this email.\"\n}"
+						},
+						{
+							"name": "add player",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Player Name\",\r\n    \"password\": \"PlayerPassword\",\r\n    \"mail\": \"player@example.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/players/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"players",
+										"add"
+									]
+								}
+							},
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "try password in middleware",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Chaya Player\",\r\n    \"password\": \"1234\",\r\n    \"mail\": \"hello@example.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/players/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"players",
+										"add"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "60"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3c-oxj4H932diMpUFEofbQT72sJ+ME\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 14:30:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"A password must contain at least 6 characters.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get the last game",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/players/6857f5d25ee8e966ff337d02/recent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"players",
+								"6857f5d25ee8e966ff337d02",
+								"recent"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "winner",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/players/6857f5d25ee8e966ff337d02/recent",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"players",
+										"6857f5d25ee8e966ff337d02",
+										"recent"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "313"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"139-RITuQxMe2Z0VrqBkrq7roxeBODQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 14:55:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"685818d1dc7a486b0de07e4b\",\n    \"playerId\": \"6857f5d25ee8e966ff337d02\",\n    \"secretCode\": [\n        2,\n        5,\n        8,\n        6\n    ],\n    \"attempts\": [\n        {\n            \"guess\": [\n                2,\n                5,\n                8,\n                6\n            ],\n            \"bulls\": 4,\n            \"pgias\": 0,\n            \"createdAt\": \"2025-06-22T14:54:50.456Z\",\n            \"_id\": \"6858193adc7a486b0de07e57\"\n        }\n    ],\n    \"status\": \"won\",\n    \"maxAttempts\": 10,\n    \"winner\": true,\n    \"createdAt\": \"2025-06-22T14:53:05.097Z\",\n    \"__v\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "get player",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "player",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/players/6857f5d25ee8e966ff337d02",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"players",
+										"6857f5d25ee8e966ff337d02"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "395"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18b-ql87s/9ihyvhHliBuKhN5FbARc0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 15:05:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6857f5d25ee8e966ff337d02\",\n    \"name\": \"Esther Cherrick\",\n    \"password\": \"$2b$10$vdiAje7nGEh5g4O0xPytBOLUVXI462b2Tn3urcJO7LF0fNJYRL26W\",\n    \"mail\": \"estherc8842@gmail.com\",\n    \"totalGames\": 1,\n    \"wins\": 0,\n    \"games\": [\n        \"68580b0b58ed066812d39595\",\n        \"685814fff23ad19e98c7b821\",\n        \"685818d1dc7a486b0de07e4b\",\n        \"685819b9dc7a486b0de07e69\",\n        \"685819dedc7a486b0de07e6d\",\n        \"685819e0dc7a486b0de07e71\",\n        \"685819ffdc7a486b0de07e75\"\n    ],\n    \"__v\": 7\n}"
+						},
+						{
+							"name": "after updating player",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/players/6857f5d25ee8e966ff337d02",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"players",
+										"6857f5d25ee8e966ff337d02"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "395"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18b-ql87s/9ihyvhHliBuKhN5FbARc0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 15:05:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6857f5d25ee8e966ff337d02\",\n    \"name\": \"Esther Cherrick\",\n    \"password\": \"$2b$10$vdiAje7nGEh5g4O0xPytBOLUVXI462b2Tn3urcJO7LF0fNJYRL26W\",\n    \"mail\": \"estherc8842@gmail.com\",\n    \"totalGames\": 1,\n    \"wins\": 0,\n    \"games\": [\n        \"68580b0b58ed066812d39595\",\n        \"685814fff23ad19e98c7b821\",\n        \"685818d1dc7a486b0de07e4b\",\n        \"685819b9dc7a486b0de07e69\",\n        \"685819dedc7a486b0de07e6d\",\n        \"685819e0dc7a486b0de07e71\",\n        \"685819ffdc7a486b0de07e75\"\n    ],\n    \"__v\": 7\n}"
+						}
+					]
+				},
+				{
+					"name": "leaderboard",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/players/leaderboard",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"players",
+										"leaderboard"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "142"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8e-2ZZ0UXG9Tagiv+QtCFdCWpU+vy0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 15:31:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Our Top ten winners are:\",\n    \"winners\": [\n        {\n            \"name\": \"Player Name\",\n            \"averageAttempts\": 0\n        },\n        {\n            \"name\": \"Esther Cherrick\",\n            \"averageAttempts\": 5.5\n        }\n    ]\n}"
+						},
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/players/leaderboard",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"players",
+										"leaderboard"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "142"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8e-2ZZ0UXG9Tagiv+QtCFdCWpU+vy0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 15:31:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Our Top ten winners are:\",\n    \"winners\": [\n        {\n            \"name\": \"Player Name\",\n            \"averageAttempts\": 0\n        },\n        {\n            \"name\": \"Esther Cherrick\",\n            \"averageAttempts\": 5.5\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "updating the player",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Esti\",\r\n    \"password\":\"123456678\",\r\n    \"mail\":\"Cherrick123@sbcglobal.net\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/players/6857f5d25ee8e966ff337d02",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"players",
+								"6857f5d25ee8e966ff337d02"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Esti\",\r\n    \"password\":\"123456678\",\r\n    \"mail\":\"Cherrick123@sbcglobal.net\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/players/6857f5d25ee8e966ff337d02",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"players",
+										"6857f5d25ee8e966ff337d02"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "36"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"24-r6b7ArJLopC9BnjULUgnTRuzdoo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 15:36:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Esti, you were updated successfully!"
+						}
+					]
+				},
+				{
+					"name": "deleting a player",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/68582444739584a0db9304dd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"68582444739584a0db9304dd"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/players/68582444739584a0db9304dd",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"players",
+										"68582444739584a0db9304dd"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2b-X3/Cy7SZmZ9Iu+D1Zg0BFocpLO0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Jun 2025 15:42:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Player Name, you were deleted successfully!"
+						}
+					]
+				}
+			],
+			"description": "this is the players folder, it includes all the mothods you can do to a player:\n\nadd a player with all the middleware checks to see if its input is correct,\n\nget his most recent game,\n\nget the player by id,"
+		}
+	]
+}
